@@ -1,7 +1,7 @@
-# Ant Colony Optimization for Traveling Salesperson Problem
+# Ant Colony Optimization for Traveling Salesman Problem
 
 ## Overview
-This application visualizes the Ant Colony Optimization (ACO) algorithm applied to the Traveling Salesperson Problem (TSP). It demonstrates how a population of agents (ants) can intelligently find optimal or near-optimal paths through a set of cities by communicating via simulated pheromone trails.
+This application visualizes the Ant Colony Optimization (ACO) algorithm applied to the Traveling Salesman Problem (TSP). It demonstrates how a population of agents (ants) can intelligently find optimal or near-optimal paths through a set of cities by communicating via simulated pheromone trails.
 
 ## Ant Colony Optimization (ACO)
 
