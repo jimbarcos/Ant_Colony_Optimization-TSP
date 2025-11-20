@@ -379,7 +379,7 @@ class TSPVisualizer:
             converged_text = ""
             if self.converged:
                 converged_text = " (Converged)"
-            self.label_best_dist.set_text(f"Best Dist: {self.visible_best_distance:.1f}{converged_text}")
+            self.label_best_dist.set_text(f"Best Dist: {int(round(self.visible_best_distance))}{converged_text}")
             self.label_best_found_at.set_text(f"Best Found At: {self.visible_last_improvement_iter}")
         else:
             self.label_best_dist.set_text("Best Distance: N/A")
@@ -639,7 +639,7 @@ class TSPVisualizer:
             dist_str = "N/A"
             color = TEXT_COLOR
             if self.visible_best_distance != float('inf'):
-                dist_str = f"{self.visible_best_distance:.1f}"
+                dist_str = f"{int(round(self.visible_best_distance))}"
                 color = BEST_PATH_COLOR
             
             label = font_label.render("Best Distance:", True, TEXT_COLOR)

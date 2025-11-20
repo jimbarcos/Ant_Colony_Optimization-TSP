@@ -130,11 +130,13 @@ class ACO:
         return random.choices(available_cities, weights=probabilities, k=1)[0]
 
     def calculate_tour_distance(self, tour):
+        # Sum integer-rounded edge distances to match UI display
         distance = 0
         for i in range(len(tour)):
             from_city = tour[i]
             to_city = tour[(i + 1) % len(tour)] # Return to start
-            distance += self.distances[from_city][to_city]
+            edge_dist = int(self.distances[from_city][to_city])
+            distance += edge_dist
         return distance
 
     def update_pheromones(self, tours, distances):
